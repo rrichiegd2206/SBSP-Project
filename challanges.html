@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Challenges</title>
+  <link rel="stylesheet" href="challanges.css">
+</head>
+<body>
+
+<header class="hero">
+  <h1>Tantangan</h1>
+</header>
+
+<nav class="navbar">
+  <div class="logo">
+  <img src="serviam.png" alt="Logo">
+  <span>SBSP</span>
+</div>
+
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="multi.html">Konsep-konsep</a></li>
+    <li><a href="advantages.html">Keunggulan</a></li>
+    <li><a href="challanges.html">Tantangan</a></li>
+    
+</nav>
+
+<section class="content fade-section card-highlight">
+
+  <h2>1. Biaya LCOE yang tinggi</h2>
+
+  <p class="lcoe-desc">
+    Kami menghitung LCOE dalam $/kWh untuk setiap desain referensi guna membandingkan biaya keseluruhan dengan teknologi produksi listrik terbarukan lainnya. LCOE sering digunakan oleh sektor energi untuk analisis perbandingan. LCOE dihitung dengan memperkirakan biaya siklus hidup sistem SBSP dan membaginya dengan produksi kWh selama siklus hidup sistem tersebut.
+  </p>
+
+
+<div class="formula-row">
+
+  <span>LCOE =</span>
+
+  <span class="fraction">
+    <span class="top">Total Lifetime Cost</span>
+    <span class="bottom">Total Lifetime Energy Yield</span>
+  </span>
+
+  <span>=</span>
+
+  <span class="fraction">
+    <span class="top">(CAPEX × C × T) + CAPEX</span>
+    <span class="bottom">Total Lifetime Energy Yield</span>
+  </span>
+  
+
+</div>
+
+  <div class="lcoe-info">
+    <p><b>CAPEX</b>: Biaya investasi awal</p>
+    <p><b>T</b>: Estimated Lifetime = 30 tahun</p>
+    <p><b>C</b>: Fixed Constant = 0,01</p>
+  </div>
+</section>
+
+<section class="content fade-section card">
+  <h2>Parameter Sistem SBSP</h2>
+
+  <div class="table-wrapper">
+    <table class="sbsp-table">
+      <tr>
+        <th>Parameter</th>
+        <th>Nilai</th>
+        <th>Sumber & Alasan</th>
+      </tr>
+
+      <tr>
+        <td>Biaya peluncuran ke LEO</td>
+        <td>$1000 per kg</td>
+        <td>Penurunan biaya peluncuran tiap tahunnya</td>
+      </tr>
+
+      <tr>
+        <td>Penggunaan ulang kendaraan</td>
+        <td>100 kali</td>
+        <td>Berdasarkan klaim SpaceX Falcon 9 reuse</td>
+      </tr>
+
+      <tr>
+        <td>Metode transfer orbit</td>
+        <td>12 pengisian bahan bakar di LEO</td>
+        <td>Waktu pengisian 1 bulan, perjalanan ke GEO 2 bulan</td>
+      </tr>
+
+      <tr>
+        <td>Peluncuran per tahun</td>
+        <td>104</td>
+        <td>Asumsi 2 peluncuran per minggu dari data sebelumnya</td>
+      </tr>
+
+      <tr>
+        <td>Efisiensi sel surya</td>
+        <td>35%</td>
+        <td>Standar NASA Smallsat</td>
+      </tr>
+
+      <tr>
+        <td>Masa pakai perangkat keras</td>
+        <td>10 tahun</td>
+        <td>Estimasi Aerospace Corporation</td>
+      </tr>
+
+      <tr>
+        <td>Umur sistem</td>
+        <td>30 tahun</td>
+        <td>Estimasi Aerospace Corporation</td>
+      </tr>
+
+      <tr>
+        <td>Massa sistem (RD1)</td>
+        <td>5.9 juta kg</td>
+        <td>Berdasarkan studi Mankins</td>
+      </tr>
+
+      <tr>
+        <td>Massa sistem (RD2)</td>
+        <td>10 juta kg</td>
+        <td>Berdasarkan studi Pellegrino</td>
+      </tr>
+
+      <tr>
+        <td>Jumlah modul</td>
+        <td>1.46 juta (RD1)<br> 2 juta (RD2)</td>
+        <td>Estimasi desain sistem</td>
+      </tr>
+
+      <tr>
+        <td>Rectenna darat</td>
+        <td>6 km (RD1)<br> 4 km × 5 lokasi (RD2)</td>
+        <td>Analogi pembangkit & antena besar</td>
+      </tr>
+
+      <tr>
+        <td>Biaya operasional & maintenance</td>
+        <td>0.01 dari CAPEX</td>
+        <td>Standar estimasi untuk energi terbarukan</td>
+      </tr>
+
+      <tr>
+        <td>Biaya rectenna di Bumi</td>
+        <td>$50 per m<sup>2</sup></td>
+        <td>Estimasi dari biaya </td>
+      </tr>
+
+    </table>
+  </div>
+</section>
+
+<section class="content fade-section card-highlight">
+
+ <h2>2. Ancaman Sampah Luar Angkasa dan Kessler Syndrome</h2>
+
+<p class="lcoe-desc">
+  Angkasa memang sangat luas, namun orbit Bumi kini semakin padat hingga menimbulkan risiko serius bagi sistem SBSP. Sebuah arsitektur tenaga surya berkapasitas 2 GW membutuhkan ruang fisik lebih dari 11,5 km², yang di orbit berfungsi seperti jaring raksasa yang berpotensi menangkap mikrometeoroid dan puing-puing luar angkasa. Bahkan partikel kecil seperti serpihan cat atau pecahan satelit berukuran milimeter yang bergerak dengan kecepatan beberapa kilometer per detik memiliki energi kinetik setara peluru, sehingga dapat merusak sel fotovoltaik, memutus jalur listrik, dan secara bertahap menurunkan output daya sistem. Selain itu, proses perakitan di orbit rendah Bumi (LEO) membawa risiko terjadinya Kessler Syndrome, yaitu reaksi berantai tabrakan yang menghasilkan semakin banyak puing berbahaya di orbit. Karena perbaikan manual di orbit geostasioner (GEO) sangat berisiko dan mahal, sistem SBSP harus sepenuhnya mengandalkan kendaraan robotik otonom untuk melakukan pemeliharaan dan penggantian modul selama masa operasional yang dapat mencapai 30 tahun.
+</p>
+</section>
+
+
+<section class="content fade-section card-highlight">
+
+<h2>3. Keterbatasan Teknologi</h2>
+
+<p class="lcoe-desc">
+  Meskipun konsep SBSP secara teori telah sesuai dengan hukum fisika, implementasinya pada skala gigawatt masih menghadapi tantangan rekayasa yang sangat kompleks. Salah satu kendala utama adalah pengembangan teknologi pemancar phased-array, di mana untuk menjaga fokus transmisi gelombang mikro ke Bumi diperlukan antena dengan lebar sekitar 1 kilometer yang terdiri dari jutaan elemen yang harus tersinkronisasi secara sempurna. Sinkronisasi ini relatif mudah dicapai pada sistem kecil dan kaku di Bumi, tetapi menjadi sangat sulit ketika diterapkan pada struktur fleksibel di luar angkasa yang mengalami ekspansi dan kontraksi akibat fluktuasi suhu ekstrem. Hingga saat ini, kemampuan untuk mempertahankan stabilitas dan sinkronisasi pada struktur sebesar itu masih belum terbukti secara praktis, sehingga menjadi salah satu hambatan utama dalam pengembangan SBSP skala besar.
+</p>
+
+</section>
+
+<footer>
+  <p>"Menjadi Pemimpin yang Peduli, Kreatif, dan Berwawasan Global"</p>
+</footer>
+
+<script src="challanges.js"></script>
+
+</body>
+</html>

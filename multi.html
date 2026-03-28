@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Konsep SBSP</title>
+  <link rel="stylesheet" href="multi.css">
+</head>
+
+<body>
+
+<header class="hero">
+  <h1>Konsep</h1>
+</header>
+
+<nav class="navbar">
+  <div class="logo">
+    <img src="serviam.png" alt="Logo SBSP">
+    <span>SBSP</span>
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="multi.html">Konsep-konsep</a></li>
+    <li><a href="advantages.html">Keunggulan</a></li>
+    <li><a href="challanges.html">Tantangan</a></li>
+  </ul>
+</nav>
+
+
+<section class="concepts fade-section">
+  <h2 class="title">Dua Konsep Utama</h2>
+
+  <div class="concept-wrapper">
+
+    <div class="concept-box">
+      <h3>Konsep Mature Planar Array</h3>
+      <img src="laser.png" class="concept-img" alt="Laser">
+
+      <ul>
+        <li>Berat jauh lebih ringan (1,46 juta kg)</li>
+        <li>Sistem terdistribusi</li>
+        <li>5 rectenna (masing-masing 4 km)</li>
+        <li>~2 juta modul kecil</li>
+        <li>Fleksibel dan dapat dikembangkan</li>
+        <li>Waktu perakitan: 38 menit</li>
+      </ul>
+    </div>
+
+    <div class="middle-text">PERBEDAAN</div>
+
+    <div class="concept-box">
+      <h3>Konsep Innovative Heliostat Swarm</h3>
+      <img src="microwave2.png" class="concept-img" alt="Microwave">
+
+      <ul>
+        <li>Total berat sangat besar (5,9 juta kg)</li>
+        <li>Sistem terpusat</li>
+        <li>Satu rectenna besar (6 km)</li>
+        <li>Struktur berbasis cermin</li>
+        <li>Berat dan kompleks untuk diluncurkan</li>
+        <li>Waktu perakitan: 40 menit</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="content dark fade-section">
+  <h2>Cara Kerja</h2>
+
+<div class="flow">
+
+  <div class="step" data-step="1">
+    <img src="sun.png" alt="">
+    <p>Collect</p>
+  </div>
+
+  <div class="arrow">→</div>
+
+  <div class="step" data-step="2">
+    <img src="microwave2.png" alt="">
+    <p>Convert</p>
+  </div>
+
+  <div class="arrow">→</div>
+
+  <div class="step" data-step="3">
+    <img src="wave.png" alt="">
+    <p>Transmit</p>
+  </div>
+
+  <div class="arrow">→</div>
+
+  <div class="step" data-step="4">
+    <img src="earth.png" alt="">
+    <p>Receive</p>
+  </div>
+
+  <div class="arrow">→</div>
+
+  <div class="step" data-step="5">
+    <img src="generator.png" alt="">
+    <p>Convert</p>
+  </div>
+
+  <div class="arrow">→</div>
+
+  <div class="step" data-step="6">
+    <img src="house2.png" alt="">
+    <p>Deliver</p>
+  </div>
+
+</div>
+
+  <div class="step-detail" id="detailBox">
+    Klik salah satu icon untuk melihat penjelasan
+  </div>
+</section>
+
+
+<section class="card-highlight fade-section">
+
+  <h2>Dasar Konsep SBSP</h2>
+
+  <p>Untuk memahami bagaimana cara sistem SBSP bekerja, kita harus melihat dua konsep fisika utama, yaitu efek fotoelektrik dalam vakum dan difraksi gelombang mikro.
+</p>
+
+<p>Sama seperti pembangkit listrik surya di Bumi, SBSP juga mengandalkan pada efek fotovoltaik, yaitu kondisi dimana material semikonduktor menyerap foton dari cahaya matahari dan melepaskan elektron untuk menciptakan arus listrik. Namun, SBSP beroperasi di lingkungan khusus yang dikenal <strong>Air Mass Zero (AMO)</strong>.
+</p>
+
+<p>Di bumi, sinar matahari harus melewati atmosfer, yang menyerap dan menyebarkan energi dalam jumlah besar (terutama sinar ultraviolet dan inframerah). Pada saat sinar matahari mencapai permukaan bumi, energi matahari maksimum yang tersedia kira kira kurang 1.000 W/m2. Dalam ruang hampa GEO, energi matahari sama sekali tidak tersaring. Nilai energi yang diterima adalah 1.361 W/m2, yang stabil dan sangat panas.
+</p>
+
+<p>Untuk menghitung daya murni yang dihasilkan oleh satelit, kita perlu menggunakan persamaan daya fotovoltaik.
+</p>
+
+  <div class="formula-box">
+    <div class="formula-title">Persamaan Daya Fotovoltaik</div>
+    <div class="formula-main">
+      Pdc = Is × Asa × ηpv
+    </div>
+  </div>
+
+    <div class="formula-desc">
+    <p><b>Pdc</b>: Total daya listrik DC</p>
+    <p><b>Is</b>: Konstanta solar di luar angkasa (1.361 W/m<sup>2</sup>)</p>
+    <p><b>Asa</b>: Total area dari panel surya</p>
+    <p><b>ηpv</b>: Efisiensi dari panel surya</p>
+
+  </div>
+
+</section>
+
+ 
+
+
+<section class="card-highlight fade-section">
+
+  <h2>Transmisi Energi & Difraksi Gelombang</h2>
+
+  <p>Setelah sel fotovoltaik menghasilkan listrik DC dalam jumlah sangat besar, listrik tersebut diubah menjadi gelombang mikro. Namun, bagaimana cara kita mengirimkannya ke Bumi tanpa kehilangan seluruh energinya? Ciri yang paling mencolok dari sistem SBSP adalah skalanya yang sangat besar: desain kelas gigawatt pada umumnya membutuhkan satelit selebar 1 kilometer dan penerima di darat selebar 10 kilometer. Hal ini dikarenakan kita terikat oleh difraksi gelombang. Ketika gelombang elektromagnetik melintasi jarak yang sangat jauh, gelombang tersebut secara alami akan menyebar. Untuk mencegah sinar tersebut menyebar terlalu luas dan membuang-buang energi sebelum mencapai Bumi, para insinyur harus memenuhi Rayleigh Diffraction Limit. Batasan matematis antara diameter pemancar ruang angkasa (Dt) dan diameter penerima di darat (Dr) ditentukan oleh persamaan berikut:
+</p>
+  <div class="formula-box">
+    <div class="formula-title">Rayleigh Diffraction Limit</div>
+    <div class="formula-main">
+      Dt · Dr = 2,44 · λ · Z
+    </div>
+  </div>
+
+    <div class="formula-desc">
+    <p><b>λ</b>: Panjang gelombang</p>
+    <p><b>Z</b>: Jarak dari satelit di GEO ke permukaan bumi (35.786 km)
+</p>
+
+  </div>
+</section>
+
+
+<section class="card-highlight fade-section">
+
+  <h2>Perhitungan Daya dan Efisiensi</h2>
+  <p>Untuk menghitung energi surya mentah yang mengenai susunan panel surya di luar angkasa, yang dikenal dengan daya insiden (Pinc). Kita mengalikan konstanta solar (Is) dengan area panel surya (Asa):</p>
+
+  <div class="formula-box">
+    <div class="formula-main">
+      Pinc = Is x Asa = 1361 × 11.473.000 = 15,61 GW
+    </div>
+  </div>
+
+  <p>
+Kemudian, kita menghitung seberapa banyak sinar matahari tersebut yang diubah menjadi listrik DC oleh panel surya, dengan memperhitungkan efisiensi sel 35%:
+</p>
+
+  <div class="formula-box">
+    <div class="formula-main">
+     Pdc = Pinc x ηpv  = 15,61 × 0,35 = 5,46 GW
+    </div>
+  </div>
+
+  <p>Untuk menyalurkan daya tepat 2 GW, efisiensi dari transmisi daya nirkabel (Wireless Power Transfer) haruslah:
+  </p>
+ 
+  <div class="formula-box highlight">
+    <div class="formula-main">
+      ηWPT =
+      <span class="fraction">
+        <span class="top">2 GW</span>
+        <span class="bottom">5,46 GW</span>
+      </span>
+      ≈ 0,366
+    </div>
+  </div>
+
+</section>
+
+
+<section class="card-highlight fade-section">
+
+  <h2>Degradasi Daya dan Total Energi</h2>
+<p>Solar panel juga mengalami sedikit degradasi seiring waktu karena radiasi ruang angkasa. Dengan asumsi sistem mengalami degradasi sebesar 10% selama masa pakainya yang 30 tahun, kita dapat memodelkan daya keluarannya (P(t)) menggunakan persamaan peluruhan eksponensial:
+</p>
+
+<div class="formula-box">
+    <div class="formula-main">
+      P(t) = Po · e<sup>-kt</sup>
+    </div>
+  </div>
+
+  <p>Dengan Po = 2, kita dapat menghitung konstanta k:
+  </p>
+
+<div class="formula-box">
+  <div class="formula-main">
+    1,8 = 2 · e<sup>-30k</sup>
+  </div>
+
+  <div class="formula-main">
+    k =
+    <span class="fraction">
+      <span class="top">-ln(0,9)</span>
+      <span class="bottom">30</span>
+    </span>
+    = 0,00351 / tahun
+  </div>
+</div>
+</div>
+<p>Untuk mencari total energi yang dihasilkan oleh sistem ini selama 30 tahun, kita menggunakan integral definit untuk menghitung luas di bawah kurva degradasi</p>
+<div class="formula-box">
+
+
+  <div class="formula-main">
+    E(t) = 
+    <span class="integral">
+      ∫
+      <span class="upper">30</span>
+      <span class="lower">0</span>
+    </span>
+    P(t) dt
+  </div>
+
+
+  <div class="formula-main">
+    E(t) = 
+    <span class="integral">
+      ∫
+      <span class="upper">30</span>
+      <span class="lower">0</span>
+    </span>
+    2 · e<sup>-0,00351t</sup> dt
+  </div>
+
+
+  <div class="formula-main">
+    E(t) = [
+    <span class="fraction">
+      <span class="top">2</span>
+      <span class="bottom">-0,00351</span>
+    </span>
+    e<sup>-0,00351t</sup>
+    ]<span class="limit">
+      <sup>30</sup>
+      <sub>0</sub>
+    </span>
+    = 56,98 GW-tahun
+  </div>
+
+</div>
+
+  <p>Ketika dikonversi menjadi TeraWatt-hours(TWh), satu satelit dapat menghasilkan sekitar:</p>
+  <div class="formula-box highlight">
+    <div class="formula-main">
+      Etotal =  56,98 x 8760 = 499,14 TWh
+    </div>
+  </div>
+
+</section>
+
+
+<section class="card-highlight fade-section">
+
+  <h2>Optimasi Antena & Kebutuhan Energi Peluncuran</h2>
+
+  <p>
+    Kemudian, memancarkan daya gigawatt melintasi ruang vakum sejauh 35.786 km menghadirkan permasalahan baru, yaitu difraksi gelombang. Gelombang mikro secara alami menyebar saat merambat. Untuk menjaga agar pancaran tetap terfokus dan aman, kita harus menggunakan kriteria Rayleigh untuk menetapkan batasan matematis antara diameter pemancar ruang angkasa (Dt) dan diameter penerima di darat (Dr).
+  </p>
+
+  <p>
+    Pertama, kita mencari konstanta difraksi orbital darat (K):
+  </p>
+
+
+  <div class="formula-box">
+    <div class="formula-main">
+      K = 2,44 · λ · Z = 2,44 · 0,1224 · 35786000 = 10.687.838,11 m²
+    </div>
+  </div>
+
+  <p>
+    Persamaan yang diperoleh:
+  </p>
+
+  <div class="formula-box">
+    <div class="formula-main">
+      Dt · Dr = K
+    </div>
+  </div>
+
+  <p>
+    Jika antena dibuat kecil, maka ukuran rectenna akan menjadi lebih besar.
+  </p>
+
+  <p>
+    Karena membangun struktur di luar angkasa sekitar 100 kali lebih mahal dibandingkan di Bumi, kita dapat menuliskan fungsi biaya:
+  </p>
+
+
+  <div class="formula-box">
+    <div class="formula-main">
+      C(Dt, Dr) = 100(Dt)<sup>2</sup> + (Dr)<sup>2</sup>
+    </div>
+
+    <div class="formula-main">
+      C(Dt) = 100Dt<sup>2</sup> + 
+      <span class="fraction">
+        <span class="top">K<sup>2</sup></span>
+        <span class="bottom">Dt<sup>2</sup></span>
+      </span>
+    </div>
+
+    <div class="formula-main">
+      C'(Dt) = 200Dt - 
+      <span class="fraction">
+        <span class="top">2K<sup>2</sup></span>
+        <span class="bottom">Dt<sup>3</sup></span>
+      </span>
+    </div>
+  </div>
+
+
+  <div class="formula-box highlight">
+    <div class="formula-main">
+      Dt<sup>4</sup> = 
+      <span class="fraction">
+        <span class="top">K<sup>2</sup></span>
+        <span class="bottom">100</span>
+      </span>
+    </div>
+
+    <div class="formula-main">
+      Dt = 
+      <span class="fraction">
+        <span class="top">√K</span>
+        <span class="bottom">√10</span>
+      </span>
+      = 1033,82 m
+    </div>
+
+    <div class="formula-main">
+      Dr = 
+      <span class="fraction">
+        <span class="top">K</span>
+        <span class="bottom">Dt</span>
+      </span>
+      = 10338,2 m
+    </div>
+  </div>
+
+  <p>
+    Dengan demikian, lebar antena optimal di ruang angkasa adalah sekitar 1,03 km dan lebar rectenna di Bumi sekitar 10,34 km.
+  </p>
+
+  <p>
+    Terakhir, untuk memindahkan pembangkit listrik seberat 5,9 juta kg ke orbit akhirnya, roket tidak dapat langsung menuju GEO. Muatan harus dibawa ke LEO terlebih dahulu, kemudian dipindahkan menggunakan pesawat penarik antariksa.
+  </p>
+
+  <p>
+    Untuk menghitung kebutuhan bahan bakar, digunakan persamaan dasar mekanika orbital:
+  </p>
+
+
+  <div class="formula-box">
+    <div class="formula-main">
+      m<sub>i</sub> = m<sub>f</sub> · e<sup>Δv / v<sub>e</sub></sup>
+    </div>
+
+    <div class="formula-main">
+      m<sub>i</sub> = 5.900.000 · e<sup>4300 / 19620</sup> = 7.345.000 kg
+    </div>
+  </div>
+
+  <p>
+    Ini berarti kita harus meluncurkan lebih dari 7,3 juta kg massa ke luar angkasa hanya untuk mendapatkan satelit dengan massa akhir 5,9 juta kg ke orbit GEO.
+  </p>
+
+</section>
+
+
+<footer>
+  <p>"Menjadi Pemimpin yang Peduli, Kreatif, dan Berwawasan Global"</p>
+</footer>
+
+<script src="multi.js"></script>
+</body>
+</html>
