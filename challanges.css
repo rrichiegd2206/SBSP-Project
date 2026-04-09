@@ -266,3 +266,134 @@ footer {
   background: #020617;
   opacity: 0.6;
 }
+
+.formula-box {
+  margin-top: 20px;
+  background: rgba(0,150,255,0.05);
+  border-radius: 12px;
+  padding: 20px 25px;
+  line-height: 1.8;
+}
+
+.formula-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #7dd3fc;
+}
+
+.formula-main {
+  margin: 6px 0;
+  font-size: 16px;
+}
+
+.formula-main.highlight {
+  font-weight: bold;
+  color: #e0f2fe;
+}
+
+.lcoe-line {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.lcoe-line .fraction {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lcoe-result-card {
+  margin-top: 20px;
+  padding: 28px 35px;
+  border-radius: 14px;
+
+  background: rgba(10, 25, 55, 0.95);
+
+  box-shadow:
+    0 0 20px rgba(0, 140, 255, 0.15);
+
+  backdrop-filter: blur(6px);
+}
+
+.lcoe-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.lcoe-result-card .fraction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lcoe-result-card .fraction .top {
+  border-bottom: 2px solid white;
+  padding: 4px 12px;
+}
+
+.lcoe-result-card .fraction .bottom {
+  padding: 4px 12px;
+}
+
+.lcoe-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.lcoe-result-card .fraction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lcoe-result-card .fraction .top {
+  border-bottom: 2px solid white;
+  padding: 5px 14px;
+}
+
+.lcoe-result-card .fraction .bottom {
+  padding: 5px 14px;
+}
+.calc-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.calc-left {
+  flex: 0 0 60%; /* fix 60% */
+}
+
+.calc-right {
+  flex: 0 0 40%; /* fix 40% */
+}
+
+.calc-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* dari center jadi kiri */
+}
+
+.calc-left,
+.calc-right {
+  min-width: 0;
+}
+
+.formula-main {
+  word-break: break-word;
+}
+
+.lcoe-result-card {
+  overflow: visible;
+}
