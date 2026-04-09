@@ -24,7 +24,6 @@
     <li><a href="challanges.html">Tantangan</a></li>
     
 </nav>
-
 <section class="content fade-section card-highlight">
 
   <h2>1. Biaya LCOE yang tinggi</h2>
@@ -58,99 +57,55 @@
     <p><b>T</b>: Estimated Lifetime = 30 tahun</p>
     <p><b>C</b>: Fixed Constant = 0,01</p>
   </div>
-</section>
 
-<section class="content fade-section card">
-  <h2>Parameter Sistem SBSP</h2>
+  <div class="formula-box">
 
-  <div class="table-wrapper">
-    <table class="sbsp-table">
-      <tr>
-        <th>Parameter</th>
-        <th>Nilai</th>
-        <th>Sumber & Alasan</th>
-      </tr>
+  <div class="formula-title">Perhitungan</div>
 
-      <tr>
-        <td>Biaya peluncuran ke LEO</td>
-        <td>$1000 per kg</td>
-        <td>Penurunan biaya peluncuran tiap tahunnya</td>
-      </tr>
+<div class="calc-row">
 
-      <tr>
-        <td>Penggunaan ulang kendaraan</td>
-        <td>100 kali</td>
-        <td>Berdasarkan klaim SpaceX Falcon 9 reuse</td>
-      </tr>
+  <!-- KIRI -->
+  <div class="calc-left">
+    <div class="formula-main">Total biaya = 81,8 B + (30 × 4,935 B)</div>
+    <div class="formula-main">= 81,8 B + 148,05 B</div>
+    <div class="formula-main highlight">= 229,85 Billion USD</div>
 
-      <tr>
-        <td>Metode transfer orbit</td>
-        <td>12 pengisian bahan bakar di LEO</td>
-        <td>Waktu pengisian 1 bulan, perjalanan ke GEO 2 bulan</td>
-      </tr>
-
-      <tr>
-        <td>Peluncuran per tahun</td>
-        <td>104</td>
-        <td>Asumsi 2 peluncuran per minggu dari data sebelumnya</td>
-      </tr>
-
-      <tr>
-        <td>Efisiensi sel surya</td>
-        <td>35%</td>
-        <td>Standar NASA Smallsat</td>
-      </tr>
-
-      <tr>
-        <td>Masa pakai perangkat keras</td>
-        <td>10 tahun</td>
-        <td>Estimasi Aerospace Corporation</td>
-      </tr>
-
-      <tr>
-        <td>Umur sistem</td>
-        <td>30 tahun</td>
-        <td>Estimasi Aerospace Corporation</td>
-      </tr>
-
-      <tr>
-        <td>Massa sistem (RD1)</td>
-        <td>5.9 juta kg</td>
-        <td>Berdasarkan studi Mankins</td>
-      </tr>
-
-      <tr>
-        <td>Massa sistem (RD2)</td>
-        <td>10 juta kg</td>
-        <td>Berdasarkan studi Pellegrino</td>
-      </tr>
-
-      <tr>
-        <td>Jumlah modul</td>
-        <td>1.46 juta (RD1)<br> 2 juta (RD2)</td>
-        <td>Estimasi desain sistem</td>
-      </tr>
-
-      <tr>
-        <td>Rectenna darat</td>
-        <td>6 km (RD1)<br> 4 km × 5 lokasi (RD2)</td>
-        <td>Analogi pembangkit & antena besar</td>
-      </tr>
-
-      <tr>
-        <td>Biaya operasional & maintenance</td>
-        <td>0.01 dari CAPEX</td>
-        <td>Standar estimasi untuk energi terbarukan</td>
-      </tr>
-
-      <tr>
-        <td>Biaya rectenna di Bumi</td>
-        <td>$50 per m<sup>2</sup></td>
-        <td>Estimasi dari biaya </td>
-      </tr>
-
-    </table>
+    <div class="formula-main highlight" style="margin-top:15px;">
+      Total energi = 499,14 TWh
+    </div>
   </div>
+
+  <!-- KANAN -->
+  <div class="calc-right">
+    <div class="formula-main">
+      Energi per tahun =
+      <span class="fraction">
+        <span class="top">499,14</span>
+        <span class="bottom">30</span>
+      </span>
+      ≈ 16,6 TWh
+    </div>
+  </div>
+
+</div>
+
+<div class="lcoe-result-card">
+
+  <div class="formula-main lcoe-line">
+
+    <span>LCOE =</span>
+
+    <span class="fraction">
+      <span class="top">229,85 B</span>
+      <span class="bottom">499,14 TWh</span>
+    </span>
+
+    <span>= 0,460 USD/kWh ≈ Rp 7.800/kWh</span>
+
+  </div>
+
+</div>
+</div>
 </section>
 
 <section class="content fade-section card-highlight">
